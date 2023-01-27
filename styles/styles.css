@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1440px;
+  margin: 0;
+}
+
+.hero {
+  background-image: url(/images/bg-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 660px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 460px;
+  color: white;
+  opacity: 0.8;
+  padding-top: 150px;
+}
+
+.hero-par {
+  font-weight: 700;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.hero-name {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 1.1;
+  padding: 25px;
+}
+
+.education-list {
+  /* width: 1440px; */
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 360px));
+  padding-left: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 360px));
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .education-list {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 360px));
+    padding-left: 0;
+  }
+
+  .box {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    align-items: flex-end;
+    justify-content: end;
+  }
+
+  .box:hover {
+    background-color: white;
+  }
+}
+
+.box {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  align-items: flex-end;
+  justify-content: end;
+}
+
+.box:hover {
+  background-color: white;
+}
+
+.education-item {
+  position: relative;
+  width: 360px;
+  height: 445px;
+  padding-right: 110px;
+}
+
+.education-item:hover {
+  background-color: blue;
+}
+
+.edu-card-number {
+  padding-top: 50px;
+  padding-left: 50px;
+  margin-bottom: 30px;
+}
+
+.edu-card-name {
+  font-weight: 700;
+  font-size: 16px;
+  padding-left: 50px;
+  margin-bottom: 70px;
+  line-height: 1.1;
+}
+
+.edu-card-par {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  padding-left: 50px;
+  /* width: 200px; */
+}
