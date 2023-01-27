@@ -93,8 +93,8 @@ ul {
   position: absolute;
   bottom: 0;
   right: 0;
-  align-items: flex-end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
 }
 
 .box:hover {
