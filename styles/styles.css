@@ -200,3 +200,12 @@ display: flex;
   align-items: flex-start;
   display: flex;
   }
+
+  .icon {
+    width: 15px;
+    height: 15px;
+    color: #0536FC;
+    background-size: contain;
+    position: absolute;
+    z-index: 2;
+  }
